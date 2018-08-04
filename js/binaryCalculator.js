@@ -4,12 +4,12 @@ let numberTwo = "";
 let answer = "";
 
 document.getElementById('btn0').onclick = function(){
-  operator == "" ? numberOne += 0 :  numberTwo += 0;
+  operator == "" ? numberOne += 0 : numberTwo += 0;
   updateDisplay();
 }
 
 document.getElementById('btn1').onclick = function(){
-  operator == "" ? numberOne += 1 :  numberTwo += 1;
+  operator == "" ? numberOne += 1 : numberTwo += 1;
   updateDisplay();
 }
 
@@ -22,7 +22,6 @@ document.getElementById('btnClr').onclick = function(){
 }
 
 document.getElementById('btnEql').onclick = function(){
-  //let answer = '?';
   if (numberOne != "" && numberTwo != "" &&  operator != "") {
     switch(operator) {
       case '+':
@@ -141,15 +140,14 @@ function divide(a, b){
   return topNum;
 }
 
-
 console.log(divide('110101', '101') == 1010);
 console.log(divide('101010', '110') == 111);
 console.log(divide('1001', '100') == 10);
 console.log(divide('1110', '101') == 10);
-// multiply('10000111010101', '0011101010111'); // 0111110000101001001100011
-console.log( multiply('10000111010101', '11101010111') == 111110000101001001100011);
-console.log( multiply('101000', '100111') == 11000011000);
-console.log( multiply('1001', '101') == 101101);
+
+console.log(multiply('10000111010101', '11101010111') == 111110000101001001100011);
+console.log(multiply('101000', '100111') == 11000011000);
+console.log(multiply('1001', '101') == 101101);
 
 console.log(add('1001', '101', '+') == 1110);
 console.log(add('10000111010101', '0011101010111', '+') == 10100100101100);
